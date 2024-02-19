@@ -7,15 +7,41 @@
     </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<div class="img-zoom-container">
+<h1>r/AITA Visualization</h1>
+<!-- <p>My first paragraph.</p> -->
+<label for="chkemployment">YTA</label>
+<input type="checkbox" id="chkemployment" onChange="toggleVisibility('myimage'); toggleVisibility('myresult'); toggleVisibility('img-zoom-container');" /><br/>
+
+
+<label for="chkpopulation">NTA</label>
+<input type="checkbox" id="chkpopulation"  onChange="toggleVisibility('myimage2'); toggleVisibility('myresult2'); toggleVisibility('img-zoom-container2');" /><br/>
+<!-- <div class="img-zoom-container">
     <img id="myimage" src="demo.png" width="300" height="240">
     <div id="myresult" class="img-zoom-result"></div>
+</div> -->
+<!-- this is nidhi editing -->
+
+<!-- <hr /> -->
+<div class="img-zoom-container" style="visibility:hidden">
+ <img id="myimage" src="demo.png" style="visibility:hidden" width="300" height="240">
+<div id="myresult" class="img-zoom-result" style="visibility:hidden"></div>
 </div>
+
+<!-- <hr /> -->
+<div class="img-zoom-container2" style="visibility:hidden">
+ <img id="myimage2" src="demo.png" style="visibility:hidden" width="300" height="240">
+<div id="myresult2" class="img-zoom-result" style="visibility:hidden"></div>
+</div>
+
+
+<!-- <img id="imgemployment" src="demo.png"  style="visibility:hidden"/> -->
+<!-- <img id="imgpopulation" src="demo.png"  style="visibility:hidden" /> -->
+
+<!-- this is the end of nidhi editing -->
 <script type="text/javascript" src="index.js"></script>
 <script>
     imageZoom("myimage", "myresult");
+    imageZoom("myimage2", "myresult2");
 </script>
 </body>
 </html>
