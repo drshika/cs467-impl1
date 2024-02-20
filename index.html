@@ -1,66 +1,131 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-        <link rel="stylesheet" href="index.css" type="text/css">
-    </head>
-<body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <h1>r/AITA Visualization</h1>
+    <!-- <p>My first paragraph.</p> -->
+    <label for="chkemployment">NTA</label>
+    <input
+      type="checkbox"
+      id="chkemployment"
+      onChange="toggleVisibility('myimage'); toggleVisibility('myresult'); toggleVisibility('img-zoom-container');"
+    /><br />
 
-<h1>r/AITA Visualization</h1>
-<!-- <p>My first paragraph.</p> -->
-<label for="chkemployment">NTA</label>
-<input type="checkbox" id="chkemployment" onChange="toggleVisibility('myimage'); toggleVisibility('myresult'); toggleVisibility('img-zoom-container');" /><br/>
+    <label for="chkpopulation">YTA</label>
+    <input
+      type="checkbox"
+      id="chkpopulation"
+      onChange="toggleVisibility('myimage2'); toggleVisibility('myresult2'); toggleVisibility('img-zoom-container2');"
+    /><br />
 
+    <label for="chkpopulation2">ESH</label>
+    <input
+      type="checkbox"
+      id="chkpopulation3"
+      onChange="toggleVisibility('myimage3'); toggleVisibility('myresult3'); toggleVisibility('img-zoom-container3');"
+    /><br />
 
-<label for="chkpopulation">YTA</label>
-<input type="checkbox" id="chkpopulation"  onChange="toggleVisibility('myimage2'); toggleVisibility('myresult2'); toggleVisibility('img-zoom-container2');" /><br/>
-
-<label for="chkpopulation2">ESH</label>
-<input type="checkbox" id="chkpopulation3"  onChange="toggleVisibility('myimage3'); toggleVisibility('myresult3'); toggleVisibility('img-zoom-container3');" /><br/>
-
-<label for="chkpopulation3">NAH</label>
-<input type="checkbox" id="chkpopulation3"  onChange="toggleVisibility('myimage4'); toggleVisibility('myresult4'); toggleVisibility('img-zoom-container4');" /><br/>
-<!-- <div class="img-zoom-container">
+    <label for="chkpopulation3">NAH</label>
+    <input
+      type="checkbox"
+      id="chkpopulation3"
+      onChange="toggleVisibility('myimage4'); toggleVisibility('myresult4'); toggleVisibility('img-zoom-container4');"
+    /><br />
+    <!-- <div class="img-zoom-container">
     <img id="myimage" src="demo.png" width="300" height="240">
     <div id="myresult" class="img-zoom-result"></div>
 </div> -->
-<!-- this is nidhi editing -->
+    <!-- this is nidhi editing -->
 
-<!-- <hr /> -->
-<div class="img-zoom-container" style="visibility:hidden">
- <img id="myimage" src="nta_wordcloud.png" style="visibility:hidden" width="300" height="240">
-<div id="myresult" class="img-zoom-result" style="visibility:hidden"></div>
-</div>
+    <!-- <hr /> -->
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="img-zoom-container" style="visibility: hidden">
+          <img
+            id="myimage"
+            src="nta_wordcloud.png"
+            style="visibility: hidden"
+            width="300"
+            height="240"
+          />
+          <div
+            id="myresult"
+            class="img-zoom-result"
+            style="visibility: hidden"
+          ></div>
+        </div>
+      </div>
 
+      <!-- <hr /> -->
+      <div class="grid-container">
+        <div class="img-zoom-container2" style="visibility: hidden">
+          <img
+            id="myimage2"
+            src="yta_wordcloud.png"
+            style="visibility: hidden"
+            width="300"
+            height="240"
+          />
+          <div
+            id="myresult2"
+            class="img-zoom-result"
+            style="visibility: hidden"
+          ></div>
+        </div>
+      </div>
+    </div>
 
-<!-- <hr /> -->
-<div class="img-zoom-container2" style="visibility:hidden">
- <img id="myimage2" src="yta_wordcloud.png" style="visibility:hidden" width="300" height="240">
-<div id="myresult2" class="img-zoom-result" style="visibility:hidden"></div>
-</div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="img-zoom-container3" style="visibility: hidden">
+                <img
+                  id="myimage3"
+                  src="esh_wordcloud.png"
+                  style="visibility: hidden"
+                  width="300"
+                  height="240"
+                />
+                <div
+                  id="myresult3"
+                  class="img-zoom-result"
+                  style="visibility: hidden"
+                ></div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="img-zoom-container4" style="visibility: hidden">
+                <img
+                  id="myimage4"
+                  src="nah_wordcloud.png"
+                  style="visibility: hidden"
+                  width="300"
+                  height="240"
+                />
+                <div
+                  id="myresult4"
+                  class="img-zoom-result"
+                  style="visibility: hidden"
+                ></div>
+              </div>
+        </div>
+    </div>
 
-<div class="img-zoom-container3" style="visibility:hidden">
-    <img id="myimage3" src="esh_wordcloud.png" style="visibility:hidden" width="300" height="240">
-   <div id="myresult3" class="img-zoom-result" style="visibility:hidden"></div>
-   </div>
+    <!-- <img id="imgemployment" src="demo.png"  style="visibility:hidden"/> -->
+    <!-- <img id="imgpopulation" src="demo.png"  style="visibility:hidden" /> -->
 
-<div class="img-zoom-container4" style="visibility:hidden">
-    <img id="myimage4" src="nah_wordcloud.png" style="visibility:hidden" width="300" height="240">
-   <div id="myresult4" class="img-zoom-result" style="visibility:hidden"></div>
-</div>
-
-
-<!-- <img id="imgemployment" src="demo.png"  style="visibility:hidden"/> -->
-<!-- <img id="imgpopulation" src="demo.png"  style="visibility:hidden" /> -->
-
-<!-- this is the end of nidhi editing -->
-<script type="text/javascript" src="index.js"></script>
-<script>
-    imageZoom("myimage", "myresult");
-    imageZoom("myimage2", "myresult2");
-    imageZoom("myimage3", "myresult3");
-    imageZoom("myimage4", "myresult4");
-</script>
-</body>
+    <!-- this is the end of nidhi editing -->
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+      imageZoom("myimage", "myresult");
+      imageZoom("myimage2", "myresult2");
+      imageZoom("myimage3", "myresult3");
+      imageZoom("myimage4", "myresult4");
+    </script>
+  </body>
 </html>
