@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing r/AITA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bbff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00bbff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Visualizing r/AITA</h1>
+
+    <p><strong>Story:</strong><br>
+        Context on the subreddit:
+        <ul>
+            <li>Everyday thousands of people come to seek advice on their questionable behavior to find out if they were the assholes or not in a particular scenario.</li>
+            <li>The subreddit then classifies the post into four verdicts: Not The Asshole (NTA), You're The Asshole (YTA), Everyone Sucks Here (ESH), No Assholes Here (NAH).</li>
+        </ul>
+    </p>
+
+    <p><strong>Main questions:</strong><br>
+        The main questions we are trying to address through this visualization are:
+        <ol>
+            <li>Are there any commonalities in the different categories of posts in r/AITA?</li>
+            <li>How does the frequency of certain words affect the verdict for the post?</li>
+        </ol>
+    </p>
+
+    <p><strong>What we found:</strong><br>
+        <ul>
+            <li>Mom was a word that was quite common for all four verdicts but it was particularly high in frequency for the Not The Asshole verdict.</li>
+            <li>The word ‘us’ was used quite commonly when the post authors were classified to be assholes.</li>
+        </ul>
+    </p>
+
+    <a href="index.html">
+        <button>Click Here to view the Word Clouds</button>
+    </a>
+</div>
+
+</body>
+</html>
