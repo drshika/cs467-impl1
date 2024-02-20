@@ -5,6 +5,12 @@ table.no-zebra tbody tr.even td {
   background: transparent !important;
 }
 
+.image-container {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
 .img-zoom-container {
   position: relative;
 }
