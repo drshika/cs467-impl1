@@ -44,81 +44,91 @@
     <!-- this is nidhi editing -->
 
     <!-- <hr /> -->
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="img-zoom-container" style="visibility: hidden">
-          <img
-            id="myimage"
-            src="nta_wordcloud.png"
-            style="visibility: hidden"
-            width="300"
-            height="240"
-          />
-          <div
-            id="myresult"
-            class="img-zoom-result"
-            style="visibility: hidden"
-          ></div>
-        </div>
-      </div>
+    <table class="no-zebra">
+        <tr id="row1" style="visibility: collapse;">
+            <td>
+                <div class="img-zoom-container" style="visibility: collapse">
+                    <img
+                      id="myimage"
+                      src="nta_wordcloud.png"
+                      style="visibility: hidden"
+                      width="300"
+                      height="240"
+                    />
+                    <div
+                      id="myresult"
+                      class="img-zoom-result"
+                      style="visibility: hidden"
+                    ></div>
+                  </div>
+            </td>
+            <td>
+                <div class="img-zoom-container2" style="visibility: collapse">
+                    <img
+                      id="myimage2"
+                      src="yta_wordcloud.png"
+                      style="visibility: hidden"
+                      width="300"
+                      height="240"
+                    />
+                    <div
+                      id="myresult2"
+                      class="img-zoom-result"
+                      style="visibility: hidden"
+                    ></div>
+                  </div>
+            </td>
+        </tr>
+        <tr id="row2" class="no-zebra">
+            <td>
+                <div class="img-zoom-container3" style="visibility: collapse    ">
+                    <img
+                      id="myimage3"
+                      src="esh_wordcloud.png"
+                      style="visibility: hidden"
+                      width="300"
+                      height="240"
+                    />
+                    <div
+                      id="myresult3"
+                      class="img-zoom-result"
+                      style="visibility: hidden"
+                    ></div>
+                  </div>
+            </td>
+            <td>
+                <div class="img-zoom-container4" style="visibility: collapse">
+                    <img
+                      id="myimage4"
+                      src="nah_wordcloud.png"
+                      style="visibility: hidden"
+                      width="300"
+                      height="240"
+                    />
+                    <div
+                      id="myresult4"
+                      class="img-zoom-result"
+                      style="visibility: hidden"
+                    ></div>
+                  </div>
+            </td>
+        </tr>
+    </table>
+    
 
-      <!-- <hr /> -->
-      <div class="grid-container">
-        <div class="img-zoom-container2" style="visibility: hidden">
-          <img
-            id="myimage2"
-            src="yta_wordcloud.png"
-            style="visibility: hidden"
-            width="300"
-            height="240"
-          />
-          <div
-            id="myresult2"
-            class="img-zoom-result"
-            style="visibility: hidden"
-          ></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid-container">
-        <div class="grid-item">
-            <div class="img-zoom-container3" style="visibility: hidden">
-                <img
-                  id="myimage3"
-                  src="esh_wordcloud.png"
-                  style="visibility: hidden"
-                  width="300"
-                  height="240"
-                />
-                <div
-                  id="myresult3"
-                  class="img-zoom-result"
-                  style="visibility: hidden"
-                ></div>
-              </div>
-        </div>
-        <div class="grid-item">
-            <div class="img-zoom-container4" style="visibility: hidden">
-                <img
-                  id="myimage4"
-                  src="nah_wordcloud.png"
-                  style="visibility: hidden"
-                  width="300"
-                  height="240"
-                />
-                <div
-                  id="myresult4"
-                  class="img-zoom-result"
-                  style="visibility: hidden"
-                ></div>
-              </div>
-        </div>
-    </div>
-
+    <!-- <hr /> -->
     <!-- <img id="imgemployment" src="demo.png"  style="visibility:hidden"/> -->
     <!-- <img id="imgpopulation" src="demo.png"  style="visibility:hidden" /> -->
 
+    <!-- this is the end of nidhi editing -->
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+      imageZoom("myimage", "myresult");
+      imageZoom("myimage2", "myresult2");
+      imageZoom("myimage3", "myresult3");
+      imageZoom("myimage4", "myresult4");
+    </script>
+  </body>
     <!-- this is the end of nidhi editing -->
     <script type="text/javascript" src="index.js"></script>
     <script>

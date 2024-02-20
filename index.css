@@ -1,14 +1,8 @@
 * {box-sizing: border-box;}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.grid-item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+table.no-zebra tbody tr:nth-child(even) td,
+table.no-zebra tbody tr.even td {
+  background: transparent !important;
 }
 
 .img-zoom-container {
