@@ -71,7 +71,7 @@ function toggleVisibility(id) {
     var im1 = document.getElementById("myimage");
     var im2 = document.getElementById("myimage2");
     row.style.visibility =
-      (row.style.visibility == "visible" && (im1.style.visibility == "visible"))
+      (row.style.visibility == "visible" && ((im1.style.visibility == "visible") || im2.style.visibility == "visible"))
         ? (row.style.visibility = "collapse")
         : row.style.visibility = "visible";
   }
